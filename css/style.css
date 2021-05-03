@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --azul:rgba(47, 23, 147, 1);
+    --celeste: rgba(35, 220, 194, 1);
+}
+
+header{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--azul);
+    padding-top: 3vh;
+    padding-bottom: 2vh;
+}
+
+header img{
+    margin-left: 3vw;
+}
+
+header div{
+    margin-right: 3vw;
+}
+
+header ul{
+    display: flex;   
+    list-style: none;
+    flex-grow: 0.5;
+    justify-content: space-around;
+   
+}
+
+header ul li{
+    font-family: 'Inter', sans-serif;
+    color: white;
+
+}
+
+
+
+
+header div button{
+    border-radius: 38px;
+    width: 113px;
+    height: 43px;
+    cursor: pointer;
+}
+
+header div button.borde{
+    background-color: var(--azul);
+    border:solid 1px white;
+    color: white;
+    font-family: 'Inter', sans-serif ;
+    margin-right: 19px;
+}
+
+header div button.relleno{
+    background-color: var(--celeste);
+    border: none;
+    color: white;
+    font-family: 'Inter', sans-serif ;
+
+}
+
+main section{
+    background-color: #E5E5E5;;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 50vh;
+}
+
+main section article{
+    font-family:  'Inter', sans-serif ;
+    background-color: white;
+    border-radius: 4px;
+    padding: 39px 27px 24px;
+    width: 354px;
+    height: 203px;
+    
+}
+
+main section article div{
+    position: absolute;
+}
+
+main section article div div.circulo{
+    border-radius: 100px;
+    width: 47px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    left: 17px;
+    bottom: 215px;
+}
+
+main section article div div.pelota{
+    background: #DF6EAC;
+   
+}
+
+main section article div div.be{
+ background-color: rgba(110, 196, 223, 1);
+}
+
+main section article div div.instagram{
+    background-color: rgba(110, 115, 223, 1);
+
+}
+
+main section article div div{
+    margin-top: 13px;
+    
+}
+
+main section article div p.ciudad{
+    font-weight: bold;
+    margin-top: 100px;
+
+}
+
+
+footer section{
+    background-color: rgba(22, 40, 76, 1);
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Inter', sans-serif ;
+    font-weight: bold;
+    color: white;
+    padding: 66px 60px 135px;
+}
+
+div h3.sangria{
+    padding-left: 75px;
+}
+
+footer section div ul{
+    margin-top: 23px;
+    margin-right: 131px;
+    display: flex;
+    list-style: none;
+}
+
+footer section img{
+    margin-left: 3vw;
+}
+
+footer div.derechos{
+    background-color: black;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+
+@media (max-width: 1090px){
+    main section{
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        height: 130vh;
+    }
+    main section article{
+       margin-top: 25px;  
+       
+    }
+  
+    
+}
+
+
+@media(max-width:800px){
+    header ul{
+       visibility: hidden; 
+    }   
+}
